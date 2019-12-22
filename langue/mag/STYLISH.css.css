@@ -1,0 +1,122 @@
+body
+{
+	background-color: rgb(235,235,235);
+}
+
+h1
+{
+	text-align:center;
+	font-family: Georgia;
+	font-size: 444%;
+	border-bottom: 0.8px black solid;
+}
+
+
+p
+{
+	text-align: center;
+	font-family: "Courier New";
+}
+
+a
+{
+	text-decoration: underline rgb(42,42,42);
+	color: rgb(67,121,167);
+}
+
+a.blanc
+{
+	color: white;
+}
+
+.encadrement
+{
+	border: 1px black double;
+}
+
+.encadrement2
+{
+	border-right: 1px black double;
+	border-left: 1px black double;
+}
+
+.soulignement
+{
+	border-bottom: 3px red solid;
+}
+
+/*
+h1.soulignement
+{	
+	display: inline-block ;
+	position: relative;
+	left: 28%;
+	
+}
+*/
+	
+
+p.encadrement
+{
+	font-size: 18px;
+	text-align: justify;
+}
+
+
+
+@-moz-keyframes DeroulementInfini {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -425px; /*2ème image*/
+	}
+	50% {
+		left: -425px; /*idem pour attente*/
+	}
+	70% {
+		left: -844px; /*3ème image*/
+	}
+	85% {
+		left: -844px; /*idem pour attente*/
+	}
+	100% {
+		left: -1278px; /*retour à la 1ère image*/
+	}
+}
+
+#slideshow 
+{
+	position: relative;
+	width: 422px;
+	height: 360px;
+	margin:  20px auto;
+	overflow: hidden;
+}
+
+#sContent li 
+{
+	display: inline;
+}
+
+#sContent 
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 2000px;
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: DeroulementInfini;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+
